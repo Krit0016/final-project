@@ -213,6 +213,7 @@ button {
 .services {
     background: #ffe6ac;
     margin-bottom: 1em;
+    /* height: fit-content; */
 }
 
 .services-text {
@@ -227,6 +228,7 @@ button {
 .service-text {
     margin-bottom: 1em;
 }
+
 
 
 /* ====== VISION SECTION ====== */
@@ -245,6 +247,7 @@ button {
     border: solid #c78b07;
     padding: 34px 45px;
 }
+
 
 
 /* ====== TEAM SECTION ====== */
@@ -347,7 +350,7 @@ footer {
     margin-bottom: 14px;
 }
 
-p {
+footer p {
     margin-bottom: 0;
 }
 
