@@ -493,8 +493,12 @@ a {
     padding: 1em;
   }
   
-    .section-vision .container h3 {
+  .section-vision .container h3 {
     margin-top: 10px;
+  }
+
+  p {
+    margin-bottom: 1em;
   }
 
 
