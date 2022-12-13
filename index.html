@@ -4,30 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/e0e30f139d.js" crossorigin="anonymous"></script>
     <title>Three Star Media</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/e0e30f139d.js" crossorigin="anonymous"></script>
+
+    <link href="css/styles.css" rel="stylesheet">
+
+
 </head>
 <body>
     
     <header>
         <nav>
             <div class="container">
-                <img src="images/logo.png" alt="Logo">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logo">
+                </div>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li class="current"><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Team</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-                <form>
+                <form class="search-form">
                     <input type="search" placeholder="Search" name="search">
-                    <button>
-                        &#128269;
+                    <button class="search-btn">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
                     </button>
                 </form>
             </div> <!-- end container -->
         </nav>
+
         <div class="header-welcome">
             <div class="container">
                 <!-- h1, p, botton -->
@@ -35,7 +47,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Magnam rerum voluptas nesciunt quam nostrum similique nihil laboriosam provident neque, 
                 recusandae voluptate temporibus! Animi accusamus id fuga voluptatibus facilis iusto consequuntur!
                 </p>
-                <button>Connect with us ▶</button>
+                <button class="welcome-btn">Connect with us ▶</button>
             </div> <!-- end container -->
         </div>
     </header>
@@ -45,11 +57,11 @@
             <div class="container">
                 <!-- two inner div's, one with an image, the other with a heading and some text -->
                 <!-- Image on left, heading and paragraphs on the right using FLEXBOX -->
-                <div>
+                <div class="img-about">
                     <img src="images/about-us.jpg" alt="About us">
                 </div>
-                <div>
-                    <h1>About Us</h1>
+                <div class="about-text">
+                    <h2>About Us</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero unde repellendus exercitationem asperiores ducimus placeat, 
                         maxime soluta nesciunt pariatur aliquam consequuntur sequi saepe sint praesentium laboriosam perferendis eius amet ad?
                     </p>
@@ -64,55 +76,77 @@
             <div class="container">
                 <!-- h2 heading, five div's each with h3, image, text and button ON A GRID don't set high-->
                 <h2>Our Services</h2>
-                <div> <!--<div 1 - digital trans>-->
-                    <img src="images/digital.jpg" alt="Digital Transformation">
-                    <h3>Digital Transformation</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
+            <div class="grid-service">
+                <div class="services">
+                    <div class="img-services"> <!--<div 1>-->
+                        <img src="images/digital.jpg" alt="Digital Transformation">
+                    </div>
+                    <div class="services-text">
+                        <h3>Digital Transformation</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
                         Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in 
                         reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?
-                    </p>
-                    <button>Digital Plans ▶</button>
+                        </p>
+                        <button>Digital Plans ▶</button>
+                    </div>
                 </div> <!--<end div 1>-->
 
-                <div> <!--<div 2 - marketing>-->
-                    <img src="images/marketing.jpg" alt="Marketing">
-                    <h3>Marketing</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
+                <div class="services">
+                    <div class="img-services"> <!--<div 2 - marketing>-->
+                        <img src="images/marketing.jpg" alt="Marketing">
+                    </div>
+                    <div class="services-text">
+                        <h3>Marketing</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
                         Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in 
                         reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?
-                    </p>
-                    <button>Marketing Plans ▶</button>
+                        </p>
+                        <button>Marketing Plans ▶</button>
+                    </div>
                 </div> <!--< end div 2>-->
 
-                <div> <!--<div 3 - video production>-->
-                    <img src="images/video.jpg" alt="Vidio Production">
-                    <h3>Video Production</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
+                <div class="services">
+                    <div class="img-services"> <!--<div 3 - video production>-->
+                        <img src="images/video.jpg" alt="Vidio Production">
+                    </div>
+                    <div class="services-text">
+                        <h3>Video Production</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
                         Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in 
                         reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?
-                    </p>
-                    <button>Video Plans ▶</button>
+                        </p>
+                        <button>Video Plans ▶</button>
+                    </div>
                 </div> <!--< end div 3>-->
 
-                <div> <!--<div 4 - web dev>-->
-                    <img src="images/web.jpg" alt="Web Development">
-                    <h3>Web Development</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
+                <div class="services">
+                    <div class="img-services"> <!--<div 4 - web dev>-->
+                        <img src="images/web.jpg" alt="Web Development">
+                    </div>
+                    <div class="services-text">
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
                         Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in 
                         reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?
-                    </p>
-                    <button>Web Plans ▶</button>
+                        </p>
+                        <button>Web Plans ▶</button>
+                    </div>
                 </div> <!--< end div 4>-->
 
-                <div> <!--<div 5 - print>-->
-                    <img src="images/print.jpg" alt="Print">
-                    <h3>Print</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
+                <div class="services">
+                    <div class="img-services"> <!--<div 5 - print>-->
+                        <img src="images/print.jpg" alt="Print">
+                    </div>
+                    <div class="services-text">
+                        <h3>Print</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
                         Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in 
                         reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?
-                    </p>
-                    <button>Print Plans ▶</button>
+                        </p>
+                        <button>Print Plans ▶</button>
+                    </div>
                 </div> <!--< end div 5>-->
+            </div>
             </div> <!-- end container -->
         </section> <!-- end section-service -->
 
@@ -124,7 +158,7 @@
                     accusantium rerum est commodi veniam tempora perspiciatis nobis officiis fagiat eaque. 
                     Veritatis exercitationem delectus ex ab laudantium.
                 </p>
-                <button>Learn More ▶</button>
+                <button class="vision-btn">Learn More ▶</button>
             </div> <!-- end container -->
         </section> <!-- end section-vision -->
 
@@ -132,29 +166,37 @@
             <div class="container">
                 <!-- h2, two div's with an image, two div's with h3, h4, and paragraph of text ON A GRID -->
                 <h2>Our Team</h2>
-                <div> <!--div 1 - john doe-->
-                    <img src="images/john.jpg" alt="John Doe">
+                <div class="grid-team">
+                    <div class="team"> <!--div 1 - john doe-->
+                        <div class="img-team"> 
+                            <img src="images/john.jpg" alt="John Doe">
+                        </div>
+                        <div class="members">
+                            <h3>John Doe</h3>
+                            <h4>CEO and Co-owner</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet, 
+                            aspernatur ratione sed cum ad officiis sint comque fugiat similique. Earum laudantium deleniti possimus? 
+                            Voluptatem architecto repellendus harum sit voluptatum tempora.
+                            </p>
+                        </div>
+                    </div> <!--end div 1 - john doe-->
                 </div>
-                <div>
-                    <h3>John Doe</h3>
-                    <h4>CEO and Co-owner</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet, 
-                        aspernatur ratione sed cum ad officiis sint comque fugiat similique. Earum laudantium deleniti possimus? 
-                        Voluptatem architecto repellendus harum sit voluptatum tempora.
-                    </p>
-                </div> <!--end div 1 - john doe-->
 
-                <div> <!--div 2 - bob rite-->
-                    <img src="images/bob.jpg" alt="Bob Rite">
+                <div class="grid-team2">
+                    <div class="team"> <!--div 2 - bob rite-->
+                        <div class="img-team"> 
+                            <img src="images/bob.jpg" alt="Bob Rite">
+                        </div>
+                        <div class="members">
+                            <h3>Bob Rite</h3>
+                            <h4>CFO and Co-owner</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet, 
+                            aspernatur ratione sed cum ad officiis sint comque fugiat similique. Earum laudantium deleniti possimus? 
+                            Voluptatem architecto repellendus harum sit voluptatum tempora.
+                            </p>
+                        </div>
+                    </div> <!--end div 2 - bob rite-->
                 </div>
-                <div>
-                    <h3>Bob Rite</h3>
-                    <h4>CFO and Co-owner</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet, 
-                        aspernatur ratione sed cum ad officiis sint comque fugiat similique. Earum laudantium deleniti possimus? 
-                        Voluptatem architecto repellendus harum sit voluptatum tempora.
-                    </p>
-                </div> <!--end div 2 - bob rite-->
             </div> <!-- end container -->
         </section> <!-- end section-team -->
 
@@ -162,46 +204,63 @@
             <div class="container">
                 <!-- a heading(h2) and three div's with a form, a map embed, and a table for the hours of operation -->
                 <h2>Contat Us</h2>
-                <div> <!--form-->
-                    <form class="box">
-                        <h3>Send us a message</h3>
-                        <div class="box-contact">
-                            <label for="fname">Full Name</label><br>
-                            <input type="text" id="fname" name="fname"><br>
-                            <label for="email">Email</label><br>
-                            <input type="text" id="email" name="email"><br>
-                            <label for="fname">Message</label><br>
-                            <input type="text" id="messge" name="message"><br>
-                            <button class="send-btn">SEND</button>
-                        </div>
-                    </form>
-                </div> <!--end form-->
+                <div class="grid-contact">
+                    <div> <!--form-->
+                        <form class="box">
+                            <div class="send-m">
+                                <h3>Send us a message</h3>
+                            </div>
+                            <div class="box-contact">
+                                <label for="fname">Full Name</label><br>
+                                <input type="text" id="fname" name="fname"><br>
 
-                <div> <!--hours of operation-->
-                    <h3>Hours of operation</h3>
-                    <table>
-                        <tr>
-                          <th>Days</th>
-                          <th>Hours</th>
-                        </tr>
-                        <tr>
-                          <td>Monday - Friday</td>
-                          <td>9 AM - 6 PM</td>
-                        </tr>
-                        <tr>
-                          <td>Saturday - Sunday</td>
-                          <td>Closed</td>
-                        </tr>
-                      </table>
-                </div> <!--end hours of operation-->
+                                <label for="email">Email</label><br>
+                                <input type="text" id="email" name="email"><br>
 
-                <div> <!--map-->
-                    <h3>Location</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944738567608!2d-75.75712548461618!3d45.349927779099744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669610481471!5m2!1sen!2sca" 
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div> <!--end map-->
+                                <label for="message">Message</label><br>
+                                <input type="text" id="message" name="message"><br>
 
+                                <button class="send-btn">Send</button>
+                            </div>
+                        </form>
+                    </div> <!--end form-->
+
+                    <div class="hours">
+                        <div> <!--hours of operation-->
+                            <div class="hnl">
+                                <h3>Hours of operation</h3>
+                            </div>
+                            <table>
+                                <tr>
+                                    <th>Days</th>
+                                    <th>Hours</th>
+                                </tr>
+                                <tr>
+                                    <td>Monday - Friday</td>
+                                    <td>9 AM - 6 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday - Sunday</td>
+                                    <td>Closed</td>
+                                </tr>
+                            </table>
+                        </div> <!--end hours of operation-->
+                    </div>
+
+                    <div class="location">
+                        <div> <!--map-->
+                            <div class="hnl">
+                                <h3>Location</h3>
+                            </div>
+                            <div>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944738567608!2d-75.75712548461618!3d45.349927779099744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669610481471!5m2!1sen!2sca" 
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div> <!--end map-->
+                    </div>
+
+                </div>
             </div> <!-- end container -->
         </section> <!-- end section-contact -->
     </main>
